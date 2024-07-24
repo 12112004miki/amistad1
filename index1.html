@@ -7,8 +7,8 @@
 
 </head>
 <body>
-    <audio controls autoplay hidden="true">
-        <source src="musica/30.mp3" type="audio/mp3">
+    <audio id="myAudio" autoplay hidden>
+        <source src="/musica/30.mp3" type="audio/mp3">
         Tu navegador no soporta el elemento de audio.
     </audio>
 <div class="envlope-wrapper">
@@ -53,6 +53,11 @@
     </center>
 </div>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script><script  src="./script.js"></script>
-
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var audio = document.getElementById("myAudio");
+        audio.play();
+    });
+</script>
 </body>
 </html>
