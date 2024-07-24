@@ -257,3 +257,7 @@ body {
   background-color: #fc9d9d;
   color: #a10000;
 }
+audio{
+  background-color: transparent;
+  opacity: 0;
+}
